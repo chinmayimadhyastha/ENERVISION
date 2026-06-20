@@ -28,6 +28,7 @@ function Dashboard() {
     <div style={{ padding: "30px" }}>
       <h1>EnerVision Dashboard</h1>
 
+      {/* Dashboard Cards */}
       <div
         style={{
           display: "flex",
@@ -36,11 +37,24 @@ function Dashboard() {
         }}
       >
         {forecast.map((item) => (
-          <DashboardCard
+          <div
             key={item.source}
-            title={`${item.source} Generation`}
-            value={`${item.predictedGeneration} MW`}
-          />
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+            }}
+          >
+            <DashboardCard
+              title={`${item.source} Generation`}
+              value={`${item.predictedGeneration} MW`}
+            />
+
+            <DashboardCard
+              title={`${item.source} Confidence`}
+              value={`${item.confidence}%`}
+            />
+          </div>
         ))}
 
         {latestWeather && (
@@ -61,6 +75,26 @@ function Dashboard() {
             />
           </>
         )}
+      </div>
+
+      {/* Forecast Explanations */}
+      <div style={{ marginTop: "40px" }}>
+        <h2>Forecast Explanations</h2>
+
+        {forecast.map((item) => (
+          <div
+            key={`${item.source}-explanation`}
+            style={{
+              border: "1px solid #333",
+              padding: "20px",
+              borderRadius: "12px",
+              marginTop: "20px",
+            }}
+          >
+            <h3>{item.source} Forecast</h3>
+            <p>{item.explanation}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
