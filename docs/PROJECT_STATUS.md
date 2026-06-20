@@ -3,18 +3,24 @@
 ## Project
 Renewable Energy Forecasting and Visualization Platform
 
-## Team Roles
+## Team Members
 - Me: Backend, Frontend, Data Seeding
 - Member 1: ML Model Training
 - Member 2: Data Pipeline
 
 ---
 
-# Phase 1 ✅ Completed
+# Current Phase
+Phase 1 ✅ Completed
+
+---
+
+# Completed Features
 
 ## Backend
 - Express server setup
 - app.js and server.js
+- Environment variables (.env)
 - Routes:
   - /api/health
   - /api/weather
@@ -23,8 +29,8 @@ Renewable Energy Forecasting and Visualization Platform
 - Mock APIs working
 
 ## Data
-weatherData.js
-forecastData.js
+- weatherData.js
+- forecastData.js
 
 ## Frontend
 - React + Vite setup
@@ -44,10 +50,12 @@ forecastData.js
 - Dark theme UI
 
 ## GitHub
-Repository created:
+Repository:
 https://github.com/chinmayimadhyastha/ENERVISION
 
-## Next Phase
+---
+
+# Next Phase
 Phase 2:
 - MongoDB setup
 - Weather schema
@@ -55,4 +63,4 @@ Phase 2:
 - Seed scripts
 - Chart.js integration
 - Confidence meter
-- Kannada language support
+- Kannada support
