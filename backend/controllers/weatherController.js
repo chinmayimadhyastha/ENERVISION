@@ -1,9 +1,17 @@
-const weatherData = require("../data/weatherData");
+const Weather = require("../models/Weather");
 
-exports.getWeather = (req, res) => {
-  res.status(200).json({
-    success: true,
-    count: weatherData.length,
-    data: weatherData,
-  });
+const getWeather = async (req, res) => {
+  try {
+    const weather = await Weather.find().sort({
+      createdAt: -1,
+    });
+
+    res.status(200).json(weather);
+  } catch (error) {
+    res.status(500).json({
+      message: error.message,
+    });
+  }
 };
+
+module.exports = { getWeather };
