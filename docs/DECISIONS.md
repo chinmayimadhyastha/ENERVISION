@@ -30,12 +30,25 @@ Forecast Features:
 - Weather monitoring
 - Kannada language support
 
-Architecture:
+## Database Decisions
+- MongoDB chosen for flexible weather and forecast documents
+- Seed scripts used during development before ML integration
 
-Frontend
-↓
-Express API
-↓
-Database
-↓
-ML Models
+## Dashboard Decisions
+- Dark theme selected for monitoring dashboard aesthetics
+- Chart.js selected for forecast visualizations
+- Modular React components for maintainability
+
+## Architecture
+
+React Dashboard
+      ↓
+Axios API Calls
+      ↓
+Express Backend
+      ↓
+MongoDB Database
+      ↓
+Weather Data + Forecast Data
+      ↓
+ML Models (Phase 3)

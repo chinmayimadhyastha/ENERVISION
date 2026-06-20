@@ -1,26 +1,48 @@
 # TODO
 
-## Phase 2
+## Phase 3
 
-### Database
-[ ] Install MongoDB
-[ ] Create connection file
-[ ] Create Weather model
-[ ] Create Forecast model
+### Weather Integration
+[ ] Integrate real weather API
+[ ] Replace seeded weather data
+[ ] Auto-update weather information
 
-### Data
-[ ] Create seed scripts
-[ ] Generate Karnataka weather data
+---
 
-### Frontend
-[ ] Add Chart.js
-[ ] Add line charts
-[ ] Add confidence meter
-[ ] Add weather timeline
+### Machine Learning Integration
+[ ] Connect ML prediction APIs
+[ ] Dynamic solar generation prediction
+[ ] Dynamic wind generation prediction
+[ ] Dynamic confidence calculation
+[ ] Dynamic explanations
+
+---
 
 ### Internationalization
-[ ] Add English
-[ ] Add Kannada
+[ ] Add English language toggle
+[ ] Add Kannada translations
+[ ] Switch dashboard labels dynamically
 
-### GitHub
+---
+
+### Deployment
+[ ] Prepare production environment variables
+[ ] Deploy backend
+[ ] Deploy frontend
+[ ] Configure database deployment
+
+---
+
+### Documentation
 [ ] Update README
+[ ] Add screenshots
+[ ] Prepare architecture diagram
+[ ] Prepare PPT
+[ ] Prepare final report
+
+---
+
+### Testing
+[ ] API testing
+[ ] Dashboard responsiveness testing
+[ ] End-to-end integration testing

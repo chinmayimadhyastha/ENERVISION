@@ -3,64 +3,121 @@
 ## Project
 Renewable Energy Forecasting and Visualization Platform
 
-## Team Members
-- Me: Backend, Frontend, Data Seeding
-- Member 1: ML Model Training
-- Member 2: Data Pipeline
+Architecture:
+
+React Dashboard
+↓
+Axios
+↓
+Express Backend
+↓
+MongoDB
+↓
+ML Models (Phase 3)
 
 ---
 
-# Current Phase
+## Team Members
+
+Me:
+- Backend Development
+- Frontend Development
+- MongoDB Integration
+- Data Seeding
+- Dashboard Visualization
+
+Member 1:
+- ML Model Training
+- Forecast Algorithms
+
+Member 2:
+- Data Collection Pipeline
+- Weather Data Processing
+
+---
+
+# Current Status
+
 Phase 1 ✅ Completed
+Phase 2 ✅ Completed
+Phase 3 🚀 In Progress
+
+Overall Progress: 65%
 
 ---
 
 # Completed Features
 
 ## Backend
-- Express server setup
-- app.js and server.js
-- Environment variables (.env)
-- Routes:
-  - /api/health
-  - /api/weather
-  - /api/forecast
-- Controllers created
-- Mock APIs working
+- Express Server
+- Environment Configuration
+- MongoDB Connection
+- Weather APIs
+- Forecast APIs
+- Controllers
+- Routes
+- Seed Scripts
 
-## Data
-- weatherData.js
-- forecastData.js
+---
+
+## Database
+Collections:
+- weathers
+- forecasts
+
+Schemas:
+- Weather Schema
+- Forecast Schema
+
+---
 
 ## Frontend
-- React + Vite setup
-- Axios setup
-- Dashboard.jsx
-- DashboardCard.jsx
+- React + Vite
+- Axios
+- Dashboard Components
+- Chart.js Integration
+
+---
 
 ## Dashboard Features
-- Solar Generation card
-- Wind Generation card
-- Solar Confidence card
-- Wind Confidence card
-- Temperature card
-- Wind Speed card
-- Cloud Cover card
-- Forecast Explanation cards
-- Dark theme UI
 
-## GitHub
-Repository:
+Cards:
+- Solar Generation
+- Wind Generation
+- Solar Confidence
+- Wind Confidence
+- Temperature
+- Wind Speed
+- Cloud Cover
+
+Visualizations:
+- Solar Forecast Chart
+- Wind Forecast Chart
+- Confidence Meters
+- Weather Timeline
+
+Additional Features:
+- AI Forecast Insight
+- Last Updated Indicator
+- Karnataka Location
+- Status Badges
+- Footer
+- Dark Theme UI
+
+---
+
+## GitHub Repository
+
 https://github.com/chinmayimadhyastha/ENERVISION
 
 ---
 
 # Next Phase
-Phase 2:
-- MongoDB setup
-- Weather schema
-- Forecast schema
-- Seed scripts
-- Chart.js integration
-- Confidence meter
-- Kannada support
+
+Phase 3:
+- Real Weather API Integration
+- ML Model Integration
+- Kannada Language Support
+- Dynamic Forecast Generation
+- Deployment Preparation
+- Final SIH Presentation
